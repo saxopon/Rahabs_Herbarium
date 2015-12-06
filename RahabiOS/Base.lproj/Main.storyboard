@@ -26,14 +26,26 @@
                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KY6-HW-4Tc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkd-fT-YuW">
-                                <rect key="frame" x="20" y="547" width="560" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="31" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkd-fT-YuW">
+                                <rect key="frame" x="174" y="332" width="253.5" height="248"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="560" id="XjG-4i-gVd"/>
-                                    <constraint firstAttribute="height" constant="33" id="q10-jZ-z4u"/>
+                                    <constraint firstAttribute="height" constant="248" id="q10-jZ-z4u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XjG-4i-gVd"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rahab's Herbarium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dd-BF-P10">
+                                <rect key="frame" x="174" y="232" width="253.5" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,12 +53,26 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Mkd-fT-YuW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-346.5" id="5YJ-Gh-iD8"/>
+                            <constraint firstItem="Mkd-fT-YuW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ZF-PM-hbE"/>
+                            <constraint firstItem="Mkd-fT-YuW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-346.5" id="CF3-oe-ezv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mkd-fT-YuW" secondAttribute="bottom" constant="20" id="Iw0-xE-Ee2"/>
+                            <constraint firstItem="9DK-OG-IF1" firstAttribute="top" secondItem="0Dd-BF-P10" secondAttribute="bottom" constant="8" id="Ncc-PV-W7l"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mkd-fT-YuW" secondAttribute="bottom" constant="20" id="PWY-mJ-Rhf"/>
                             <constraint firstItem="9DK-OG-IF1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="deD-a7-mwO"/>
+                            <constraint firstItem="Mkd-fT-YuW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fht-rH-ZyB"/>
                             <constraint firstItem="9DK-OG-IF1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ijS-Nt-bWo"/>
+                            <constraint firstItem="Mkd-fT-YuW" firstAttribute="width" secondItem="0Dd-BF-P10" secondAttribute="width" id="jkv-gn-FtD"/>
+                            <constraint firstItem="0Dd-BF-P10" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sbl-Xl-qS8"/>
                             <constraint firstItem="Mkd-fT-YuW" firstAttribute="centerX" secondItem="9DK-OG-IF1" secondAttribute="centerX" id="wkp-S5-zVg"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5YJ-Gh-iD8"/>
+                                <exclude reference="CF3-oe-ezv"/>
+                                <exclude reference="fht-rH-ZyB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="Button" destination="9DK-OG-IF1" id="7Os-zU-3XJ"/>
